@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+           <form>
+                <div class="display">
+                   <input type="text" name="display" id="MyResult">
+                </div>
+
+                <div>
+                    <input type="button" value="AC" class="operator1" onclick="DeleteMe()">
+                    <input type="button" value="("   class="operator" onclick="CalculatorFun('(')">
+                    <input type="button" value=" )"  class="operator" onclick="CalculatorFun(')')"> 
+                    <input type="button" value="/"   class="operator" onclick="CalculatorFun('/')">
+                </div>
+                <div>
+                    <input type="button" value="7"  onclick="CalculatorFun('7')">
+                    <input type="button" value="8"  onclick="CalculatorFun('8')">
+                    <input type="button" value="9"  onclick="CalculatorFun('9')">
+                    <input type="button" value="*"  class="operator" onclick="CalculatorFun('*')">
+                </div>
+                <div>
+                    <input type="button" value="4"  onclick="CalculatorFun('4')">
+                    <input type="button" value="5"  onclick="CalculatorFun('5')">
+                    <input type="button" value="6"  onclick="CalculatorFun('6')">
+                    <input type="button" value="-"  class="operator" onclick="CalculatorFun('-')">
+                </div>
+                <div>
+                    <input type="button" value="1"  onclick="CalculatorFun('1')">
+                    <input type="button" value="2"  onclick="CalculatorFun('2')">
+                    <input type="button" value="3"  onclick="CalculatorFun('3')">
+                    <input type="button" value="+"  class="operator" onclick="CalculatorFun('+')">
+                </div>
+                <div>
+                    <input type="button" value="00"  onclick="CalculatorFun('00')">
+                    <input type="button" value="0"   onclick="CalculatorFun('0')">
+                    <input type="button" value="."  class="operator" onclick="CalculatorFun('.')">
+                    <input type="button" value="="   class="equal operator" onclick="AnswerFun('=')">
+                </div>
+           </form>
+        </div>   
+    </div>
+
+
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
